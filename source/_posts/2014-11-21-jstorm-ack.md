@@ -10,6 +10,8 @@ tags: [JStorm,Storm,分布式系统]
 
 Storm一个很重要的特性是它能够保证你发出的每条消息都会被完整处理， 完整处理的意思是指：一个tuple被完全处理的意思是： 这个tuple以及由这个tuple所导致的所有的tuple都被成功处理。而一个tuple会被认为处理失败了如果这个消息在timeout所指定的时间内没有成功处理, 而这个timetout可以通过Config.TOPOLOGY_MESSAGE_TIMEOUT_SECS来指定。也就是说对于任何一个spout-tuple以及它的所有子孙到底处理成功失败与否我们都会得到通知。storm里面有个专门的acker来跟踪所有tuple的完成情况。
 
+<!--more-->
+
 在Spout的接口ISpout中，需要实现的参数有：
 
 	public interface ISpout extends Serializable {

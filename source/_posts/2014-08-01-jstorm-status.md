@@ -10,6 +10,8 @@ tags: [JStorm,Storm,分布式系统]
 
 storm集群里面工作机器分为两种一种是nimbus, 一种是supervisor, 他们通过zookeeper来进行交互，nimbus通过zookeeper来发布一些指令，supervisor去读zookeeper来执行这些指令。
 
+<!--more-->
+
 这篇文章主要介绍JStorm的本地目录，zookeeper的本地目录，以及他们之间如何协调工作。
 
 ## ZooKeeper中保存的数据目录结构

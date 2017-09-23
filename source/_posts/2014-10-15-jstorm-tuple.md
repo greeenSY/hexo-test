@@ -11,8 +11,10 @@ tags: [JStorm,Storm,分布式系统]
 Tuple的处理流程图如图1所示：
 
 ![topologySubmit](/images/jstorm/image045.png)
- 
+
 <center>图1 Worker中tuple的处理流程</center>
+
+<!--more-->
 
 ## tuple的发送
 

@@ -10,6 +10,8 @@ tags: [分布式系统,批量处理,Hadoop,Spark]
 
 批量数据处理技术实现了大规模静态数据的高吞吐处理，主要针对静态数据集，以吞吐量大为显著特征，其典型的技术是分布式编程框架MapReduce，被广泛应用于数据抽取、转换、查询、统计等数据处理中。在MapReduce 技术之上，还产生了Pig, SCOPE, Hive和Tenzing等类SQL 的高级查询语言和系统，用于编写数据查询应用。
 
+<!--more-->
+
 ## Hadoop（MapReduce）
 
 Hadoop是一个分布式系统架构，由Apache基金会所开发，其核心主要包括两个组件：HDFS和MapReduce，前者为海量存储提供了存储，而后者为海量的数据提供了计算。这里我们主要关注MapReduce。以下资料来源于Hadoop的官方说明文档和论文。

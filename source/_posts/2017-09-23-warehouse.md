@@ -8,6 +8,8 @@ tags: [数据仓库]
 
 前不久读的一本经典读物《数据仓库》，整理了一些要点。
 
+<!--more-->
+
 # 思维导图
 
 ![warehouse](/images/warehouse/warehouse.png)

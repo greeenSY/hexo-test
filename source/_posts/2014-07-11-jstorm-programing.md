@@ -6,8 +6,9 @@ category: 大数据
 tags: [JStorm,Storm,分布式系统]
 ---
 
-
 JStorm 是一个分布式实时计算引擎。JStorm 是一个类似Hadoop MapReduce的系统， 用户按照指定的接口实现一个任务，然后将这个任务递交给JStorm系统，Jstorm将这个任务跑起来，并且按7 * 24小时运行起来，一旦中间一个worker 发生意外故障， 调度器立即分配一个新的worker替换这个失效的worker。因此，从应用的角度，JStorm 应用是一种遵守某种编程规范的分布式应用。从系统角度， JStorm一套类似MapReduce的调度系统。 从数据的角度， 是一套基于流水线的消息处理机制。实时计算现在是大数据领域中最火爆的一个方向，人们对数据的要求越来越高，实时性要求也越来越快，传统的Hadoop Map Reduce，逐渐满足不了需求，因此在这个领域Storm 和JStorm 展露头角。JStorm 是用java 完全重写Storm内核， 并重新设计了调度、采样、监控、HA，并对Zookeeper和RPC 进行大幅改良，让性能有30%的提升， 从而JStorm比storm更稳定， 更快，功能更强。
+
+<!--more-->
 
 这篇文章主要介绍JStorm的Topology和基本编程结构，编程结构基本类似于Storm，结合源码简单说一下，也做一个备份。
 

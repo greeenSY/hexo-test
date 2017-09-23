@@ -1,4 +1,3 @@
 hexo clean
-hexo generate
-hexo server
+hexo s -g
 

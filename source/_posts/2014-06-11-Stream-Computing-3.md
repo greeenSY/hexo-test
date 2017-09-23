@@ -10,6 +10,8 @@ tags: [分布式系统,流式处理]
 
 这一篇文章整理了MapRedcue Online,Facebook Data Freeway and Puma,Kafka,TimeStream,Naiad等。
 
+<!--more-->
+
 ## MapReduce Online
 
 MapReduce Online由加州大学伯克利分校提出，对于mapreduce进行改进以适应流式计算，提出了pipeline的思想：Map产生的中间结果，应该尽快的传输到Reduce端。用户可以在提交job的时候，指定一个步进比例，比如10%。 当Reduce检测到自己收到的Map处理是这个步进比例的倍数时，比如30%，就在收到的这些数据的基础上，进行一次Reduce计算，得到一个中间结果。HOP把这个过程叫做“snapshot”。这种方式没有去考虑Map如何对数据进行取样，也没有考虑数据skew的问题，但是无论如何，”snapshot”提供了一种可能，让用户有可能得到某种形式的反馈。

@@ -9,6 +9,8 @@ tags: [分布式系统, pig]
 
 一个基于Hadoop的并行执行数据流处理的引擎，被设计为实现已知将执行的一系列的数据操作
 
+<!--more-->
+
 ## HIVE vs Pig vs MapReduce
 
 - 相对于MapReduce，PIG提供实现一些标准数据操作，早起的数据错误检查和优化，更容易编写和维护

@@ -10,6 +10,8 @@ tags: [JStorm,Storm,分布式系统]
 
 众所周知，在Storm集群系统中，zookeeper和supervisor都是多节点，任意一个zookeeper节点宕机或supervisor节点宕机均不会对系统整体运行造成影响，但 nimbus和ui都是单节点 。ui的单节点对系统的稳定运行没有影响，仅提供storm-ui页面展示统计信息。但nimbus承载了集群的许多工作，如果nimbus单节点宕机，将会使系统整体的稳定运行造成极大风险。因此解决nimbus的单点问题，将会更加完善storm集群的稳定性。
 
+<!--more-->
+
 虽然Nimbus在设计上是无状态的，进程在挂掉之后立即重启并不会对Storm集群产生太大的影响，但如果在Nimbus挂掉期间再有一个Supervisor节点出现问题，那么Supervisor所负责的任务将无法分配到其它的节点，集群也将处于不稳定的状态。
 
 因此解决Storm集群的Nimbus单点问题也是很必要的。

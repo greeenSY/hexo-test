@@ -9,6 +9,8 @@ tags: [JStorm,Storm,分布式系统]
 
 与Storm类似，Jstorm的启动过程需要两个部分：
 
+<!--more-->
+
 * 在nimbus 节点上执行 “nohup jstorm nimbus &” 
 * 在supervisor节点上执行 “nohup jstorm supervisor &”
 

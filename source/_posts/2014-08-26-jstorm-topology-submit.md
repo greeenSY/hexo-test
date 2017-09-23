@@ -10,6 +10,8 @@ tags: [JStorm,Storm,分布式系统]
 
 Topology的上传过程是将完成的Jstorm程序打包成jar再上传到Jstorm中，通过” jstorm jar xxxxxx.jar com.alibaba.xxxx.xx parameter”命令启动JStorm的上传时会通过这个python脚本中main函数调用对应的函数启动相应jar中的功能模块。而后这个java程序会被编译执行并从命令中的，其中的submitTopology()会触发Topology的提交过程。
 
+<!--more-->
+
 ![topologySubmit](/images/jstorm/image021.png)
  
 <center>图1 Topology提交过程流程图</center>
